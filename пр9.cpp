@@ -10,11 +10,11 @@ int main()
     int arr[n];
     int arr2[n];
 
-    cout << "Enter array values: " << endl;
+    cout << "Enter values: " << endl;
     srand(time(NULL));
     for (int i = 0; i < n; i++)
     {
-        cout << "arr[" << i + 1 << "] = ";
+        cout << "arr[" << i + 1 << "] = " << endl;
         cin >> arr[i];
     }
 
@@ -22,12 +22,12 @@ int main()
 
     cout << "Negative array values index: " << endl;
 
-    for (int i = 0; i < n; i++)
+    for (int j = 0; j < n; j++)
     {
-        if (arr[i] < 0)
+        if (arr[j] < 0)
         {
-            arr2[i] = i + 1;
-            cout << "arr[" << arr2[i] << "]" << endl;
+            arr2[j] = j + 1;
+            cout << "arr[" << arr2[j] << "]" << endl;
         }
     }
 
